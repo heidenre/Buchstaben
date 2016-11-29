@@ -11,6 +11,22 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  
+  <description>Grossbuchstaben</description>
+  <developers>
+    <developer>
+      <name>Andreas Heidenreich</name>
+      <email>andreas.heidenreich@hs-furtwangen.de</email>
+    </developer>
+  </developers>
+  
+  <reporting>
+    <plugins>
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </reporting>
 
   <build>
     <plugins>
@@ -33,7 +49,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.12</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
