@@ -22,6 +22,12 @@ public class UtilTest {
 		else			this.soll = false;
 		this.param = param;
 	}
+	
+	@Test(expected=IllegalArgumentException.class, timeout = 1000)
+	public void testException(){
+		Util.istErstesHalbjahr(0);
+		Util.istErstesHalbjahr(13);
+	}
 
 	@Parameters
 	public static Collection<Integer[]> daten(){
@@ -46,10 +52,4 @@ public class UtilTest {
 		assertEquals(soll,Util.istErstesHalbjahr(param));
 	}
 	
-	@Test(expected=IllegalArgumentException.class, timeout = 1000)
-	public void testException(){
-		Util.istErstesHalbjahr(0);
-		Util.istErstesHalbjahr(13);
-	}
-
 }
